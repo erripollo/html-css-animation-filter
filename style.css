@@ -1,0 +1,279 @@
+/* Esercizio 1 */
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transition: all 3s;
+}
+.ex-1-square:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+/* Esercizio 2 */
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 3s;
+}
+.ex-2-square:hover{
+    cursor: pointer;
+}
+.ex-2-square:active{
+    width: 100%;
+}
+
+
+/* Esercizio 3 */
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 2s;
+}
+.ex-3-square:hover{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Esercizio 4 */
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 3s;  
+}
+.ex-4-square:hover{
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Esercizio 5 */
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: all 3s;
+}
+.ex-5-square:hover{
+    cursor: pointer;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+.ex-5-square:active{
+    margin: 30px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(360deg);
+}
+
+
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+/* Esercizio 6 */
+.ex-6-img:hover{
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+/* Esercizio 7 */
+.ex-7-img{
+    transition: all 3s;
+    filter: blur(8px);
+}
+.ex-7-img:hover{
+    cursor: pointer;
+    filter: blur(0) contrast(2) hue-rotate(170deg);
+}
+
+/* Esercizio 8 */
+.ex-8-img{
+    transition: all 3s;
+}
+.ex-8-img:hover{
+    cursor: pointer;
+    filter: saturate(1.5) brightness(1.5);
+    border-radius: 150px 20px;
+}
+
+/* Esercizio 9 */
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transition: all 3s;
+}
+.ex-9-img:hover{
+    cursor: pointer;
+    filter: grayscale(1) contrast(1.5);
+    border-radius: 100px;
+    transform: scale(1.5);
+}
+
+/* Esercizio 10 */
+.ex-10-icon {
+    font-size: 60px;
+    animation-name: load-10;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes load-10{
+    0% {
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Esercizio 11 */
+.ex-11-icon {
+    font-size: 60px;
+}
+.ex-11-icon:hover{
+    cursor: pointer;
+    animation-name: load-11;
+    animation-duration: 2s;
+}
+@keyframes load-11{
+    0%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+}
+
+
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: move-12-top;
+    animation-duration: 2s;
+}
+@keyframes move-12-top{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 60%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: move-12-botton;
+    animation-duration: 2s;
+}
+@keyframes move-12-botton{
+    0%{
+        right: 10%;
+    }
+    50%{
+        right: 60%;
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: move-13-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes move-13-top{
+    0%{
+        top: -5px;
+        left: 10%;
+    }
+    30%{
+        top: -5px;
+        left: 80%;
+    }
+    45%{ 
+        top: 50px;
+        left: 80%;
+    }
+    75%{
+        top: 50px;
+        left: -5px;
+    }
+    90%{
+        top: -5px;
+        left: -5px;
+    }
+    100%{
+        top: -5px;
+        left: 10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: move-13-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes move-13-bottom{
+    0%{
+        bottom: -5px;
+        right: 20%;
+    }
+    30%{
+        bottom: -5px;
+        right: 80%;
+    }
+    45%{ 
+        bottom: 50px;
+        right: 80%;
+    }
+    75%{
+        bottom: 50px;
+        right: -5px;
+    }
+    90%{
+        bottom: -5px;
+        right: -5px;
+    }
+    100%{
+        bottom: -5px;
+        right: 20%;
+    }
+}
